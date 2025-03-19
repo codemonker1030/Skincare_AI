@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+        <h1> Skincare Recommendation System</h1>
+
+        <form id="recommendation-form">
+            <fieldset>
+                <legend>Select Your Skin Type</legend>
+                <div class="option"><label><input type="radio" name="skin-type" value="Oily"> Oily - Produces excess oil, making skin look shiny and prone to acne.</label></div>
+                <div class="option"><label><input type="radio" name="skin-type" value="Dry"> Dry - Lacks moisture, often feels rough, flaky, or tight.</label></div>
+                <div class="option"><label><input type="radio" name="skin-type" value="Normal"> Normal - Well-balanced, neither too oily nor too dry.</label></div>
+                <div class="option"><label><input type="radio" name="skin-type" value="Combination"> Combination - Oily in some areas (like the T-zone) and dry in others.</label></div>
+                <div class="option"><label><input type="radio" name="skin-type" value="Sensitive"> Sensitive - Easily irritated, may react to certain products or weather conditions.</label></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select Your Skin Conditions</legend>
+                <div class="option"><label><input type="checkbox" name="skin-condition" value="Acne"> Acne - Pimples, blackheads, and cysts.</label></div>
+                <div class="option"><label><input type="checkbox" name="skin-condition" value="Eczema"> Eczema - Dry, itchy rash.</label></div>
+                <div class="option"><label><input type="checkbox" name="skin-condition" value="Psoriasis"> Psoriasis - Scaly patches of inflamed skin.</label></div>
+                <div class="option"><label><input type="checkbox" name="skin-condition" value="Dry Skin"> Dry Skin - Rough, flaky, and itchy.</label></div>
+                <div class="option"><label><input type="checkbox" name="skin-condition" value="Diabetic Skin"> Diabetic Skin - Dryness, itching, and brown patches.</label></div>
+                <div class="option"><label><input type="checkbox" name="skin-condition" value="Vitiligo"> Vitiligo - White patches due to loss of pigment.</label></div>
+            </fieldset>
+
+            <button type="submit" id="get-recommendations">Get Recommendations</button>
+        </form>
+
+        <div id="loader" class="loader" style="display: none;"></div>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
